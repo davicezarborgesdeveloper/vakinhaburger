@@ -1,6 +1,6 @@
 import 'package:intl/intl.dart';
 
-extension formatterExtension on double {
+extension FormatterExtension on double {
   String get currencyPTBR {
     final currencyFormat = NumberFormat.currency(
       locale: 'pt_BR',

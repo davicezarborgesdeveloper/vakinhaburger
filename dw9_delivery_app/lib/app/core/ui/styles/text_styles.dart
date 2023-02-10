@@ -30,7 +30,7 @@ class TextStyles {
   TextStyle get textExtraBold =>
       TextStyle(fontWeight: FontWeight.w800, fontFamily: font);
 
-  TextStyle get textButtonLabel => textBold.copyWith(fontSize: 14);
+  TextStyle get TextButtonLabel => textBold.copyWith(fontSize: 14);
 }
 
 extension TextStyleExtensions on BuildContext {

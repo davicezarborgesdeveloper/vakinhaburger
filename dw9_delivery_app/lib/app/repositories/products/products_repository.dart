@@ -1,5 +1,5 @@
-import 'package:dw9_delivery_app/app/models/product_model.dart';
+import 'package:dw9_delivery_app/app/models/product.dart';
 
 abstract class ProductsRepository {
-  Future<List<ProductModel>> findAllPRoducts();
+  Future<List<ProductModel>> findAllProducts();
 }

@@ -1,13 +1,13 @@
-import 'package:dw9_delivery_app/app/core/extensions/formatter_extension.dart';
+import 'package:dw9_delivery_app/app/core/mixins/formatter_extension.dart';
 import 'package:dw9_delivery_app/app/core/ui/styles/colors_app.dart';
 import 'package:dw9_delivery_app/app/core/ui/styles/text_styles.dart';
-import 'package:dw9_delivery_app/app/models/product_model.dart';
+import 'package:dw9_delivery_app/app/models/product.dart';
 import 'package:flutter/material.dart';
 
 class DeliveryProductTile extends StatelessWidget {
   final ProductModel product;
-  const DeliveryProductTile({Key? key, required this.product})
-      : super(key: key);
+
+  const DeliveryProductTile({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {

@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 void main() async {
   await Env.i.load();
   WidgetsFlutterBinding.ensureInitialized();
-  setWindowSizeDesktop();
+  await setWindowSizeDesktop();
   runApp(const Dw9DeliveryApp());
 }
 
