@@ -13,6 +13,7 @@ void main() async {
 }
 
 setWindowSizeDesktop() async {
+  print(Platform.operatingSystem);
   if (Platform.isWindows) {
     await DesktopWindow.setWindowSize(
         Size(392.72727272727275, 803.6363636363636));
