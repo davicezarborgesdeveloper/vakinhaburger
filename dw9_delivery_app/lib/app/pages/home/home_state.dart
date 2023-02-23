@@ -28,7 +28,7 @@ class HomeState extends Equatable {
     required this.shoppingBag,
   });
 
-  const HomeState.inicial()
+  const HomeState.initial()
       : status = HomeStateStatus.initial,
         products = const [],
         shoppingBag = const [],

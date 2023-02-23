@@ -8,7 +8,7 @@ import 'package:dw9_delivery_app/app/repositories/products/products_repository.d
 class HomeController extends Cubit<HomeState> {
   final ProductsRepository _productsRepository;
 
-  HomeController(this._productsRepository) : super(const HomeState.inicial());
+  HomeController(this._productsRepository) : super(const HomeState.initial());
 
   Future<void> loadProducts() async {
     emit(state.copyWith(status: HomeStateStatus.loading));
