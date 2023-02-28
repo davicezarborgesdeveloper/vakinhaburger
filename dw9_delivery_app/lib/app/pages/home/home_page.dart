@@ -1,6 +1,4 @@
 import 'package:dw9_delivery_app/app/core/ui/base_state/base_state.dart';
-import 'package:dw9_delivery_app/app/core/ui/helpers/loader.dart';
-import 'package:dw9_delivery_app/app/core/ui/helpers/messages.dart';
 import 'package:dw9_delivery_app/app/core/ui/widgets/delivery_appbar.dart';
 import 'package:dw9_delivery_app/app/pages/home/home_controller.dart';
 import 'package:dw9_delivery_app/app/pages/home/home_state.dart';
@@ -8,7 +6,6 @@ import 'package:dw9_delivery_app/app/pages/home/widgets/delivery_product_tile.da
 import 'package:dw9_delivery_app/app/pages/home/widgets/shopping_bag_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -20,6 +17,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends BaseState<HomePage, HomeController> {
   @override
   void onReady() {
+    // SharedPreferences.getInstance().then((value) => value.clear());
     controller.loadProducts();
   }
 

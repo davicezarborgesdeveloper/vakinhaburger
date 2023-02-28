@@ -9,7 +9,7 @@ void main() async {
   await Env.i.load();
   WidgetsFlutterBinding.ensureInitialized();
   await setWindowSizeDesktop();
-  runApp(const Dw9DeliveryApp());
+  runApp(Dw9DeliveryApp());
 }
 
 setWindowSizeDesktop() async {
